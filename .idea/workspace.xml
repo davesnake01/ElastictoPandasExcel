@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2040a40-e216-4632-af2e-2a36dae46b31" name="Changes" comment="- Version terminada, puede buscar en cualquier indice, mostrar su estructura y luego transformarla a excel&#10;- Solo funciona con Elasticsearch 6.4, posiblemente por la funcion scan, ver si se puede cambiar en el futuro">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QTX44mL6aWePhhsDD3JFFiKWyL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,15 +36,16 @@
 }</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="pythonElastictoSQL" />
+      <module name="ElastictoPandasExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\daves\PycharmProjects\tablaConvergenciaSimbiu\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (tablaConvergenciaSimbiu)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -76,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685403631390</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Version terminada, puede buscar en cualquier indice, mostrar su estructura y luego transformarla a excel&#10;- Solo funciona con Elasticsearch 6.4, posiblemente por la funcion scan, ver si se puede cambiar en el futuro">
+      <created>1713990574314</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713990574314</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,7 +111,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>61</line>
+          <line>68</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

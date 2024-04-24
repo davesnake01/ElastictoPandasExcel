@@ -1,6 +1,7 @@
 from elasticsearch import Elasticsearch #Es importante usar la version de elasticsearch 6.4.0
 from elasticsearch.helpers import scan
 import pandas as pd
+import os
 
 
 #Revisar el requirements.txt
