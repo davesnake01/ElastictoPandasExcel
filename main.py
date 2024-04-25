@@ -3,6 +3,7 @@ from elasticsearch.helpers import scan
 import pandas as pd
 import os
 import json
+from datetime import datetime
 
 
 #Revisar el requirements.txt
@@ -55,11 +56,27 @@ def getData():
 
     else:
 
+        # fecha = df[['fecha_lectura']]
+        #
+        # try:
+        #     fechaConverted = datetime.strptime(fecha,
+        #                                        "%Y-%m-%dT%H:%M:%S.%f")  # Fecha que viene desde ElasticSearch, en ocasiones viene con milisegundos
+        #
+        # except:
+        #     fechaConverted = datetime.strptime(fecha,
+        #                                        "%Y-%m-%dT%H:%M:%S")  # Fecha que viene desde ElasticSearch, sin milisegundos
+        #
+        # fechaConverted = fechaConverted.strftime("%d-%m-%Y %H:%M:%S")  # La vuelvo a convertir para insertarla en MS SQL
+
+
+        #por cosas de tiempo, no alcanzo a convertir la fecha todavia.
+
+
         print(df.head())
         print(df.columns)
         print(df.size)
         lista = df[
-            ['id_noticia','titular', 'fecha_lectura' ]]
+            ['id_noticia','titular','texto','fecha_lectura' ]]
         # for index, row in lista.iterrows():
         #     # variables
         #     idnoticia = row["id_noticia"]
