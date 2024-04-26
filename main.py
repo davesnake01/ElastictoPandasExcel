@@ -76,7 +76,7 @@ def getData():
         print(df.columns)
         print(df.size)
         lista = df[
-            ['id_noticia','titular','texto','fecha_lectura' ]]
+            ['id_noticia','titular','texto','fecha_lectura']]
         # for index, row in lista.iterrows():
         #     # variables
         #     idnoticia = row["id_noticia"]
@@ -85,7 +85,7 @@ def getData():
         #     fecha = row["fecha_lectura"]
 
             # print(idnoticia,titular, URL, fecha)
-        lista.to_excel("FIDAE_2018-2.xlsx")
+        lista.to_excel("FACH_2018-Prensa.xlsx")
 
 
 
