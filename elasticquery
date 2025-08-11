@@ -4,15 +4,16 @@
     "id_noticia",
     "titular",
     "texto",
-    "fecha_lectura"
+    "fecha_lectura",
+    "id_diario"
   ],
   "query": {
     "bool": {
       "filter": {
         "range": {
           "fecha_lectura": {
-            "gte": "2018-04-01T04:00:00Z",
-            "lte": "2018-05-01T04:00:00Z",
+            "gte": "2016-05-01T04:00:00Z",
+            "lte": "2016-05-02T04:00:00Z",
             "time_zone": "+03:00"
           }
         }
@@ -22,7 +23,7 @@
           "bool": {
             "filter": {
               "multi_match": {
-                "query": "FACH",
+                "query": "primera piedra",
                 "type": "phrase",
                 "fields": [
                   "titular",
@@ -37,7 +38,7 @@
           "bool": {
             "filter": {
               "multi_match": {
-                "query": "FIDAE",
+                "query": "hospital del trabajador",
                 "type": "phrase",
                 "fields": [
                   "titular",
@@ -49,7 +50,7 @@
         }
       ],
 
-        "minimum_should_match": 1
+        "minimum_should_match": 2
     }
   }
 }

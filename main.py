@@ -25,7 +25,7 @@ def get_data_from_elastic():
                query=query,
                size=10, #No tiene ningún efecto, por lo que la limitacion lo da la fecha
                scroll='1m',
-               index='clipsx2018',
+               index='clipsx2016',
                raise_on_error=True,
                preserve_order=False,
                clear_scroll=True
@@ -76,7 +76,7 @@ def getData():
         print(df.columns)
         print(df.size)
         lista = df[
-            ['id_noticia','titular','texto','fecha_lectura']]
+            ['id_noticia','id_diario','titular','texto','fecha_lectura']]
         # for index, row in lista.iterrows():
         #     # variables
         #     idnoticia = row["id_noticia"]
@@ -85,9 +85,10 @@ def getData():
         #     fecha = row["fecha_lectura"]
 
             # print(idnoticia,titular, URL, fecha)
-        lista.to_excel("FACH_2018-Prensa.xlsx")
+        lista.to_excel("ACHS-Prensa.xlsx")
 
 
 
 if __name__ == '__main__':
     getData()
+    #No sé todavia porqué, pero tuve que ejecutarlo en el terminal, en pycharm no se ejecuta bien.
